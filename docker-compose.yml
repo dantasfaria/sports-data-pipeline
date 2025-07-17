@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    volumes:
+    - .:/app
+  airflow:
+    image: apache/airflow:2.5.1
+    environment:
+      AIRFLOW_CORE_LOAD_EXAMPLES: 'false'
+    volumes:
+      - ./airflow:/opt/airflow

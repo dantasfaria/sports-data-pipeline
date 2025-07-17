@@ -1,0 +1,6 @@
+pandas
+numpy
+requests
+scikit-learn
+xgboost
+apache-airflow==2.5.1
